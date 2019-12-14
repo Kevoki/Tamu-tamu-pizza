@@ -1,13 +1,21 @@
-/*Moving heading to the center*/
+/*Styling the header*/
+.header {
+  text-align: center;
+}
+/*Coloring h1 to red*/
 h1 {
-    text-align: center;
     color: red;
+}
+p1 {
+
+    color: rgb(17, 43, 119);
 }
 /*Adding background color to the top navigation*/
 .topnav {
     width: 100%;
     background-color: rgb(27, 184, 6);
     overflow: hidden;
+    float: center;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
