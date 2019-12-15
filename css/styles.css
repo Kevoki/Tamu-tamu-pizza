@@ -67,3 +67,12 @@ p1 {
       display: block;
     }
   }
+.titledBackground {
+    background-image: url('https://bit.ly/35oFxLU');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border: 20% solid;
+    color: rgb(0, 0, 0);
+  } 
