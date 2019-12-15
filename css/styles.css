@@ -68,7 +68,7 @@ p1 {
     }
   }
 .titledBackground {
-    background-image: url('https://bit.ly/35oFxLU');
+    background-image: url('https://bit.ly/2qPU7ge');
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -76,3 +76,25 @@ p1 {
     border: 20% solid;
     color: white;
   } 
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h2 {
+  color: blue;
+}
+h3 {
+  color: rgb(228, 74, 87)14)14);
+
+}
+.col-sm-4 {
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
