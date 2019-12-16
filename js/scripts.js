@@ -6,9 +6,7 @@
         var toppings = $("#toppings :selected").val()
         var number = $("#number").val()
 
-        var add = function(number1, number2) {
-            return number1 + number2;
-          };
+       
 
         alert(flavour)
 
