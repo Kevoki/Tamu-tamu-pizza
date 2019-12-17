@@ -1,71 +1,31 @@
-var price , crust_price, topping_price ;
-let total = 0;
-function Getpizza( flavours,size,crusts,toppings,number ){
-  this.flavours = flavours;
-  this.size = size;
-  this.crusts = crusts;
-  this.toppings= toppings;
-  this.number = number;
-}
+// var price , crust_price, topping_price ;
+// let total = 0;
+// function Getpizza( flavours,size,crusts,toppings,number ){
+//   this.flavours = flavours;
+//   this.size = size;
+//   this.crusts = crusts;
+//   this.toppings= toppings;
+//   this.number = number;
+// }
 
 $(document).ready(function() {
   //$("button.proceed").click(function(){
   //$("button.proceed").hide();
   //$("#information").hide();
   //$("div.choise").slideDown(1000);
-  });
+
   
-  $("button.proceed").click(function(event){
-   let pflavour = $(".flavour option:selected").val();
-   let psize = $("#size option:selected").val();
-   let pcrust = $("#crust option:selected").val();
+  $("#checkout").click(function(event){
+    event.preventDefault();
+   let pflavour = $("#flavours option:selected").val();
+   let psize = $("#sizes option:selected").val();
+   let pcrust = $("#crusts option:selected").val();
+   let ptoppings = $("#topppings option:selected").val();
    let ptopping = [];
    $.each($("input[name='toppings']:checked"), function(){            
        ptopping.push($(this).val());
    });
    console.log(ptopping.join(", "));
-
-   switch(psize){
-    case "0":
-      price =0;
-    break;
-    case "large":
-      price = 1000;
-       console.log(price);
-     break;
-     case "medium":
-       price = 850;
-       console.log("The price is "+price);
-     break;
-     case "small":
-       price = 400;
-       console.log(price);
-     default:
-       console.log("error"); 
-   }
-
-   switch(pcrust){
-      case "0":
-        crust_price = 0;
-      break;
-      case "Thin Crust":
-        crust_price = 150;
-      break;
-      case "Thick Crust":
-        crust_price = 250;
-      break;
-      case "Stuffed Crust":
-        crust_price = 150;
-      break;
-      case "Gluten-free":
-        crust_price = 250;
-      break;
-      case "Crisp Crust":
-        crust_price = 100;
-      break;
-      default:
-        console.log("No price"); 
-    }
 
     let topping_value = ptopping.length*50;
     console.log("toppins value" + topping_value);
@@ -81,7 +41,8 @@ $(document).ready(function() {
       $("#information").hide();
       $("div.choise").slideDown(1000);
     }
-    total = price + crust_price + topping_value;
+
+    total = pflavour + psize + pcrust + ptoppings;
     console.log(total);
     let checkoutTotal =0;
     checkoutTotal = checkoutTotal + total;
@@ -103,58 +64,6 @@ $(document).ready(function() {
 
       console.log(ptopping.join(", "));
 
-      switch(ptopping){
-        case "0":
-          price =0;
-        break;
-        case "tomato":
-           price = 100;
-           console.log(price);
-         break;
-         case "onions":
-           price = 130;
-           console.log("The price is "+price);
-         break;
-         case "mushroom":
-           price = 250;
-           console.log(price);
-         break;
-         case "olives":
-           price = 100;
-           console.log(price);
-         break;
-         case "peperoni":
-           price = 100;
-           console.log(price);
-         break;
-         case "peri-peri chicken":
-           price = 250;
-           console.log(price);
-         default:
-           console.log("error"); 
-       }
-       switch(pcrusts){
-          case "0":
-            crust_price = 0;
-          break;
-          case "Thin Crust":
-            crust_price = 150;
-          break;
-          case "Thick Crust":
-            crust_price = 250;
-          break;
-          case "Stuffed Crust":
-            crust_price = 150;
-          break
-          case "Gluten-free":
-            crust_price = 250;
-          break;
-          default:
-          case "Crisp Crust":
-            crust_price = 100;
-          break;
-            console.log("No price"); 
-        }
         let topping_value = ptopping.length*50;
         console.log("toppins value" + topping_value);
         total = price + crust_price + topping_value;
@@ -175,6 +84,7 @@ $(document).ready(function() {
       console.log("Your total bills is sh. "+checkoutTotal);
       $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
     });
+
     // home delivery button
     $("button.deliver").click(function(){
       $(".pizzatable").hide();
@@ -189,23 +99,5 @@ $(document).ready(function() {
     });
    
   });
+});
 
-  var slideIndex = 0;
-  showSlides();
-  
-  function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-  }

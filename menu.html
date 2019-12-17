@@ -24,6 +24,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="jumbotron">
+                            <form id="pizzaform">
                             <h2>Order</h2>
                             <div id="blanks">
                             </div>
@@ -68,14 +69,17 @@
                                 <option value="250">Gluten-free</option>
                                 <option value="100">Crisp Crust</option>
                             </select>
-                            <label>Choose your toppings:</label>
-                            <select id="toppings" class="custom-select custom-select-md mb-3" id="topping" required>
-                                <option value="100">Tomato</option>
-                                <option value="130">Onions</option>
-                                <option value="250">Mushroom</option>
-                                <option value="100">Peperoni</option>
-                                <option value="100">Peri-Peri chicken</option>
-                            </select>
+                            <div id="topping">
+                                <label>Choose your toppings:</label>
+                                <select id="toppings" class="custom-select custom-select-md mb-3" id="topping" required>
+                                    <option value="100">Tomato</option>
+                                    <option value="130">Onions</option>
+                                    <option value="250">Mushroom</option>
+                                    <option value="100">Peperoni</option>
+                                    <option value="100">Peri-Peri chicken</option>
+                                </select>
+                            </div>
+   
                             <label for="number">Number of Pizza's</label>
                             <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
                                 max="100" required><br><br>
@@ -90,6 +94,7 @@
                 </div>
             </div>
         </div>
-        <script src="js/scripts.js"></script>
     </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>    
 </html>
