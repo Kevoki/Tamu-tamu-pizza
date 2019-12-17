@@ -22,3 +22,5 @@ No known bugs.
 ## Contact Information
 My contact email is kokioma@gmail.com. If you have questions or you have encountered any issues, have ideas or concerns, I urge you to contact me or make a contribution to the code.
 
+MIT License
+A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
