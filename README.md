@@ -13,7 +13,7 @@ This project, incorporates  HTML (index.html), CSS (styles.css and bootstrap), J
 Tamu tamu pizza has been created using Visual Studio 2015.
 
 ## Github Live Link
-The github live link is   
+The github live link is   https://kevoki.github.io/Tamu-tamu-pizza/
 
 ## Known Bugs
 No known bugs.
