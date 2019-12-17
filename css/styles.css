@@ -53,7 +53,11 @@ p1 {
     background-attachment: fixed;
     background-size: cover;
   }
-  .topnav-centered a {
+.pizzaform {
+  max-width: 500px;
+  margin: auto;
+}
+.topnav-centered a {
     position: relative;
     top: 0;
     left: 0;
@@ -98,4 +102,7 @@ h3 {
 .col-sm-4 {
   grid-column: 1;
   grid-row: 2 / 5;
+}
+.contact2 {
+  text-align: center;
 }
