@@ -1,4 +1,14 @@
 $(document).ready(function() {
+  $("#yes").hide();
+  $("#no").hide();
+  $("#totalcost").hide();
+  $("#delivercost").hide();
+  $(".yes-button").hide();
+  $(".no-button").hide();
+  $(".address").hide();
+  
+
+
   $("#order").click(function(event){
     event.preventDefault();
    let pflavour = parseInt($("#flavours option:selected").val());
@@ -22,7 +32,6 @@ $(document).ready(function() {
      '<td>'+ grandTotal+'</td>'+
       '</tr>');
 
-
       $(".checkout").click(function() {
         $(".checkout").hide();
         $(".delivery").show();
@@ -43,7 +52,7 @@ $(document).ready(function() {
       $(".address").show();
       $(".yes-button").hide();
       $(".no-button").hide();
-      $("#totalcost span").html(grandTotal + 300);
+      $("#totalcost span").html(grandTotal + 100);
     });
       $(".no-button").click(function() {
       $("#delivercost").hide();
@@ -66,5 +75,6 @@ $(document).ready(function() {
       $("#tablecart tbody tr").remove();
     }); 
   });
+});
 });
 
