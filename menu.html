@@ -84,11 +84,28 @@
                             <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
                                 max="100" required><br><br>
                             <a href="#summary">
-                                <button type="submit" class="btn btn-success checkout" id="checkout">
-                                    Checkout
+                                <button type="submit" class="btn btn-success checkout" id="order">
+                                    Order
                                 </button>
                             </a>
                             </form><br><br>
+
+                            <div id="cart">
+                                <table class="table" id="tablecart">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">FLavours</th>
+                                            <th scope="col">Sizes</th>
+                                            <th scope="col"> Crusts</th>
+                                            <th scope="col">Toppings</th>
+                                            <th scope="col">Number</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

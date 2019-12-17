@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#checkout").click(function(event){
+  $("#order").click(function(event){
     event.preventDefault();
    let pflavour = parseInt($("#flavours option:selected").val());
    let psize = parseInt($("#sizes option:selected").val());
@@ -11,6 +11,16 @@ $(document).ready(function() {
    let grandTotal = total * pnumber;
    
    console.log(grandTotal)
+
+   $('table#tablecart').append(
+     '<tr>'+
+     '<td>'+ $("#flavours option:selected").text()+'</td>'+
+     '<td>'+ $("#sizes option:selected").text()+'</td>'+
+     '<td>'+ $("#crusts option:selected").text()+'</td>'+
+     '<td>'+ $("#toppings option:selected").text()+'</td>'+
+     '<td>'+ pnumber+'</td>'+
+     '<td>'+ grandTotal+'</td>'+
+      '</tr>');
 
    
   });
