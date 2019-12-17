@@ -21,3 +21,4 @@ No known bugs.
 
 ## Contact Information
 My contact email is kokioma@gmail.com. If you have questions or you have encountered any issues, have ideas or concerns, I urge you to contact me or make a contribution to the code.
+
