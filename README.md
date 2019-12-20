@@ -8,9 +8,11 @@ https://kevoki.github.io/Tamu-tamu-pizza/
 
 
 # Setup/Installation Requirements
-•	Open terminal (CTRL ALT T)
-•	git clone  https://kevoki.github.io/Tamu-tamu-pizza/
-•	use atom . or code . to open the clone repo on Atom or VS-code respectively
+    •	Open terminal (CTRL ALT T)
+
+    •	git clone  https://kevoki.github.io/Tamu-tamu-pizza/
+
+    •	use atom . or code . to open the clone repo on Atom or VS-code respectively
 
 # Description
 The website has a navigation bar to take the user to the available pages within the website.
