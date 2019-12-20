@@ -1,3 +1,9 @@
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  float: center;
+  
+}
 /*Styling the header*/
 .header {
   text-align: center;
@@ -12,10 +18,10 @@ p1 {
 }
 /*Adding background color to the top navigation*/
 .topnav-centered {
-    width: 100%;
-    background-color: rgb(27, 184, 6);
-    overflow: hidden;
-    float: center;
+  width: 100%;
+  background-color: rgb(27, 184, 6);
+  overflow: hidden;
+  float: center;
 }
 /* Style the links inside the navigation bar */
 .topnav-centered a {
