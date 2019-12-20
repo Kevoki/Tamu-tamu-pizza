@@ -30,9 +30,9 @@ $(document).ready(function () {
     let psize = parseInt($("#sizes option:selected").val());
     let pcrust = parseInt($("#crusts option:selected").val());
     let ptopping = parseInt($("#toppings option:selected").val());
-    let pnumber = parseInt($("#number").val());
+    let pnumber = parseInt($("#number ").val());
 
-    let newOrder = new PizzaOrder(pflavour, psize, pcrust, ptopping, number)
+    let newOrder = new PizzaOrder(pflavour, psize, pcrust, ptopping, pnumber)
     let total = newOrder.pizzaPrice();
     let grandTotal = total * newOrder.number;
 
