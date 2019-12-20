@@ -1,26 +1,34 @@
-# Tamu-tamu pizza
 
-This is a web application that takes shows the landing page of Tamu tamu pizza.
-Tamu tamu pizaa is a school project to demonstrate the knowledge of HTML, CSS, JAVASRIPT.
+
+PIZZA APP
+by Kevin Okioma
+
+#Link to site
+https://kevoki.github.io/Tamu-tamu-pizza/
+
+
+# Setup/Installation Requirements
+•	Open terminal (CTRL ALT T)
+•	git clone  https://kevoki.github.io/Tamu-tamu-pizza/
+•	use atom . or code . to open the clone repo on Atom or VS-code respectively
+
+# Description
+The website has a navigation bar to take the user to the available pages within the website.
+There is a form for user input that is required to be filled with the relevant information for an order to be made; after the user clicks the submit order button.
 
 # More on the application
 A customer can select the pizza they want add the toppings and crust they want then a price will be calculated reflecting the total amount of the items selected.
 
-## Technologies
-This project, incorporates  HTML (index.html), CSS (styles.css and bootstrap), JAVASRIPT(scripts.js and jQuery). The website is responsive accross different devices.
+# Technology Used
+The web page is constructed out of HTML and CSS and Javascript. Also with assistance from their library counterpart i.e Bootstrap and jQuery.
 
-## Set/Installation
-Tamu tamu pizza has been created using Visual Studio 2015.
+# Contribution
+Created by https://github.com/Kevoki  
 
-## Github Live Link
-The github live link is   https://kevoki.github.io/Tamu-tamu-pizza/
+#Support and contact
+In case of any problems with the Webpage feel free to reach out via 
+kokioma@gmail.comLink to live link
 
-## Known Bugs
-No known bugs.
-
-
-## Contact Information
-My contact email is kokioma@gmail.com. If you have questions or you have encountered any issues, have ideas or concerns, I urge you to contact me or make a contribution to the code.
-
-MIT License
-A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+License This project is licensed under the terms of the MIT license
+LICENSE
+Copyright (c) {2019} Keivin OKioma
